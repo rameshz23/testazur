@@ -27,7 +27,7 @@ def call(body) {
 		      script { 
 		               echo USER //log.info 'Starting'
 		               echo SHELL //log.warning 'Nothing to do!'
-		  	       currentBuild.displayName = "$env.NEW_BUILDNUMBER"
+		  	       //currentBuild.displayName = "$env.NEW_BUILDNUMBER"
 		       }
 		}
 	    }
