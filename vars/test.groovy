@@ -19,7 +19,7 @@ def call(body) {
             
            stage ('FTP') {
 		agent{
-			docker { image 'ftpserver/ftpserver' }
+			docker { image 'aequitas/ftp-resource' }
 		}
             	steps {
 		      sh """ env > envfile
