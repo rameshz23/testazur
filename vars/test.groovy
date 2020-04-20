@@ -19,7 +19,7 @@ def call(body) {
             
            stage ('FTP') {
 		agent{
-			docker { image 'apnarm/ftp2http' }
+			docker { image 'ftpserver/ftpserver' }
 		}
             	steps {
 		      sh """ env > envfile
