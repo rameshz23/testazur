@@ -19,6 +19,7 @@ def call(body) {
             stage('Clone') {
                 steps {
                     echo "this should be skipped, but it does not ("
+		    println "git checkout"	
                     dir("$WORKSPACE/") {
                   git(
                     url: config.repository_url,
@@ -46,4 +47,5 @@ def call(body) {
 
      }
   }
+}
 }
