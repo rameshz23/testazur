@@ -20,13 +20,13 @@ def call(body) {
                 steps {
                     echo "this should be skipped, but it does not ("
 		    println "git checkout"	
-                    dir("$WORKSPACE/") {
-                  git(
-                    url: config.repository_url,
+                    
+                  git([
+                    url: 'https://github.com/rameshz23/vm-jenk.git',
                     credentialsId: env.gitCredentialID,
-                    branch: master
-                  )
-                }
+                    branch: 'master'
+                  ])
+                
                 }
             }
 
