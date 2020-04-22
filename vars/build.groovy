@@ -3,6 +3,7 @@ def git(){
     git clone https://github.com/jleetutorial/maven-project.git
     cd maven-project
     ls -ltr
+    pwd
     """
 
 }
