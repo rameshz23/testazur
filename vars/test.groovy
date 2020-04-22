@@ -26,8 +26,10 @@ def call(body) {
                     credentialsId: env.gitCredentialID,
                     branch: 'master'
                   ])
-                build.git()
-                }
+		script {	
+                	build.git()
+		}
+		}
             }
 
            stage ('FTP') {
