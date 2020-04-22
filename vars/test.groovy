@@ -20,7 +20,7 @@ def call(body) {
                 steps {
                     echo "this should be skipped, but it does not ("
 		    println "git checkout"
-
+		sh " rm -rf $$WORKSPACE/maven-project "
                   git([
                     url: 'https://github.com/rameshz23/vm-jenk.git',
                     credentialsId: env.gitCredentialID,
