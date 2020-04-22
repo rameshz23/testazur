@@ -19,14 +19,14 @@ def call(body) {
             stage('Clone') {
                 steps {
                     echo "this should be skipped, but it does not ("
-		    println "git checkout"	
-                    
+		    println "git checkout"
+
                   git([
                     url: 'https://github.com/rameshz23/vm-jenk.git',
                     credentialsId: env.gitCredentialID,
                     branch: 'master'
                   ])
-                
+                build.git()
                 }
             }
 
