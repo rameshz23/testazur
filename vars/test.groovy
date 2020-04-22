@@ -46,8 +46,7 @@ def call(body) {
 		       }
 		}
 	    }
-	cleanWs()
-
+	
      }
   }
 }
